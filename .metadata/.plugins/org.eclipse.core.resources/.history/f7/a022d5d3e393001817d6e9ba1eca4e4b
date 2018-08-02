@@ -1,0 +1,11 @@
+import javax.swing.*;
+
+public class Home extends JFrame{
+
+	public Home() {
+		super("Test");
+		setSize(400,300);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
