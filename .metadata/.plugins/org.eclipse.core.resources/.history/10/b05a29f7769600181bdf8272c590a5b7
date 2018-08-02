@@ -4,7 +4,9 @@ public class Test {
 
 	static int a = 10;
 	
-	public void method1() {
-		System.out.println("ºÎ¸ð");
+	public static int method1() {
+		return a;
 	}
 }
+
+// did it uploaded?
