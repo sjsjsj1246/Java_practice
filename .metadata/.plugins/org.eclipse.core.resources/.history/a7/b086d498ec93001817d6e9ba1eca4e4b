@@ -1,8 +1,0 @@
-import javax.swing.*;
-
-public class Test extends JFrame{
-
-	JTextArea ta = new JTextArea();
-	
-	public Test
-}
