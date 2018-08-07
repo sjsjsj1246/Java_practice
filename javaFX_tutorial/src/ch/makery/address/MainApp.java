@@ -1,6 +1,8 @@
 package ch.makery.address;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.prefs.Preferences;
 
 import ch.makery.address.model.Person;
 import ch.makery.address.view.PersonEditDialogController;
@@ -10,6 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -40,7 +43,9 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("AddressApp");
-
+        
+    	// 애플리케이션 아이콘을 설정한다.
+        this.primaryStage.getIcons().add(new Image("file:resources/images/address_book_32.png"));
         initRootLayout();
 
         showPersonOverview();
@@ -74,7 +79,7 @@ public class MainApp extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
             AnchorPane personOverview = (AnchorPane) loader.load();
-
+            
             // 연락처 요약을 상위 레이아웃 가운데로 설정한다.
             rootLayout.setCenter(personOverview);
             
@@ -110,6 +115,7 @@ public class MainApp extends Application {
             // 다이얼로그 스테이지를 만든다.
             Stage dialogStage = new Stage();
             dialogStage.setTitle("Edit Person");
+            dialogStage.getIcons().add(new Image("file:resources/images/address_book_32.png"));
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
@@ -140,5 +146,42 @@ public class MainApp extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+    
+    /**
+     * 연락처 파일 환경설정을 반환한다.
+     * 즉 파일은 마지막으로 열린 것이고, 환경설정은 OS 특정 레지스트리로부터 읽는다.
+     * 만일 preference를 찾지 못하면 null을 반환한다.
+     *
+     * @return
+     */
+    public File getPersonFilePath() {
+        Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
+        String filePath = prefs.get("filePath", null);
+        if (filePath != null) {
+            return new File(filePath);
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * 현재 불러온 파일의 경로를 설정한다. 이 경로는 OS 특정 레지스트리에 저장된다.
+     *
+     * @param file the file or null to remove the path
+     */
+    public void setPersonFilePath(File file) {
+        Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
+        if (file != null) {
+            prefs.put("filePath", file.getPath());
+
+            // Stage 타이틀을 업데이트한다.
+            primaryStage.setTitle("AddressApp - " + file.getName());
+        } else {
+            prefs.remove("filePath");
+
+            // Stage 타이틀을 업데이트한다.
+            primaryStage.setTitle("AddressApp");
+        }
     }
 }
