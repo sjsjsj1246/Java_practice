@@ -14,5 +14,10 @@
     <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
     <fullyQualifiedTypeName name="com.sun.glass.ui.Application"/>
     <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="practice.MainApp"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
+    <fullyQualifiedTypeName name="javafx.scene.Scene"/>
 </qualifiedTypeNameHistroy>
