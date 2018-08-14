@@ -15,9 +15,13 @@
     <fullyQualifiedTypeName name="com.sun.glass.ui.Application"/>
     <fullyQualifiedTypeName name="javafx.application.Application"/>
     <fullyQualifiedTypeName name="practice.MainApp"/>
-    <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
+    <fullyQualifiedTypeName name="javafx.stage.Stage"/>
+    <fullyQualifiedTypeName name="javafx.scene.Parent"/>
     <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.ListView"/>
 </qualifiedTypeNameHistroy>
