@@ -2,8 +2,13 @@
     -fx-background-color: #1d1d1d;
 }
 
-.root{
+.rootbackground{
 	-fx-background-image: url("../../../resources/RootLayout.png");
+	-fx-background-size: 350px;
+}
+
+.repobackground{
+	-fx-background-image: url("../../../resources/RepoTapLayout.png");
 	-fx-background-size: 350px;
 }
 

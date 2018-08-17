@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainApp extends Application {
 
@@ -15,6 +16,7 @@ public class MainApp extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("test");
 		this.primaryStage.setResizable(false);
