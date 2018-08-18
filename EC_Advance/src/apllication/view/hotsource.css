@@ -12,6 +12,16 @@
 	-fx-background-size: 350px;
 }
 
+.friendbackground{
+	-fx-background-image: url("../../../resources/FriendTapLayout.png");
+	-fx-background-size: 350px;
+}
+
+.othersbackground{
+	-fx-background-image: url("../../../resources/OthersTapLayout.png");
+	-fx-background-size: 350px;
+}
+
 .transparent{
 	-fx-background-color: transparent;
 }
