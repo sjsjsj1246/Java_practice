@@ -8,7 +8,10 @@ import apllication.view.RootLayoutController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.collections.FXCollections;
@@ -79,6 +82,21 @@ public class MainApp extends Application {
 			e.printStackTrace();
 		}
 	}
+	
+	public boolean showRepo() {
+        try {
+            // fxml 파일을 로드하고 나서 새로운 스테이지를 만든다.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("view/RepoLayout.fxml"));
+            VBox repo = (VBox) loader.load();
+
+            
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 	
 	/**
 	 * 저장소에 대한 observable 리스트를 반환한다.

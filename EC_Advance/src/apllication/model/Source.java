@@ -10,7 +10,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 /**
- * 저장소 모델 클래스
+ * 소스 모델 클래스
  *
  * @brief 저장소의 정보를 담는 클래스
  */

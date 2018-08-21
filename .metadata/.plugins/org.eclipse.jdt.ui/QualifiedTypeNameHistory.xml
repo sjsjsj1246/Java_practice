@@ -18,7 +18,6 @@
     <fullyQualifiedTypeName name="javafx.stage.Stage"/>
     <fullyQualifiedTypeName name="javafx.scene.Parent"/>
     <fullyQualifiedTypeName name="javafx.scene.control.ListView"/>
-    <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
     <fullyQualifiedTypeName name="apllication.model.Source"/>
@@ -36,4 +35,5 @@
     <fullyQualifiedTypeName name="javafx.scene.Scene"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="javafx.scene.Cursor"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
 </qualifiedTypeNameHistroy>

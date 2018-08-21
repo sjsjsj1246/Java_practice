@@ -1,33 +1,44 @@
-.background {
-    -fx-background-color: #1d1d1d;
-}
 
-.rootbackground{
+.rootBackground{
 	-fx-background-image: url("../../../resources/RootLayout.png");
 	-fx-background-size: 350px;
 }
 
-.repobackground{
+.repoTapBackground{
 	-fx-background-image: url("../../../resources/RepoTapLayout.png");
 	-fx-background-size: 350px;
 }
 
-.friendbackground{
+.friendTapBackground{
 	-fx-background-image: url("../../../resources/FriendTapLayout.png");
 	-fx-background-size: 350px;
 }
 
-.othersbackground{
+.othersTapBackground{
 	-fx-background-image: url("../../../resources/OthersTapLayout.png");
 	-fx-background-size: 350px;
+}
+
+.friendBackground{
+	-fx-background-image: url("../../../resources/FriendLayout.png");
+	-fx-background-size: 300px;
+}
+
+.repoBackground{
+	-fx-background-image: url("../../../resources/RepoLayout.png");
+	-fx-background-size: 300px;
+}
+
+.sourceBackground{
+	-fx-background-image: url("../../../resources/SourceLayout.png");
+	-fx-background-size: 300px;
 }
 
 .transparent{
 	-fx-background-color: transparent;
 }
 
-.gg{
+.font{
 	-fx-font-family: "BMDOHYEON";
-	-fx-font-size: 12;
-	-fx-text-fill: white;
+	-fx-text-fill: black;
 }
