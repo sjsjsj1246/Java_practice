@@ -98,6 +98,11 @@ public class MainApp extends Application {
         }
     }
 	
+	public void deleteTapLayout() {
+		if(rootLayout.getChildren().size() > 1)
+			rootLayout.getChildren().remove(1);
+	}
+	
 	/**
 	 * 저장소에 대한 observable 리스트를 반환한다.
 	 * @return
