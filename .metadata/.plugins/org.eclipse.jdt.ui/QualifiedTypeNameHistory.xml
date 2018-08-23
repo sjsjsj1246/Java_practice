@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="apllication.MainApp"/>
     <fullyQualifiedTypeName name="apllication.model.Repo"/>
     <fullyQualifiedTypeName name="apllication.utill.ButtonCursorEventHandler"/>
-    <fullyQualifiedTypeName name="apllication.view.RootLayoutController"/>
     <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="javax.print.DocFlavor.URL"/>
@@ -37,4 +36,6 @@
     <fullyQualifiedTypeName name="javafx.scene.Cursor"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
     <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+    <fullyQualifiedTypeName name="apllication.view.RepoTapLayoutController"/>
+    <fullyQualifiedTypeName name="apllication.view.RootLayoutController"/>
 </qualifiedTypeNameHistroy>

@@ -4,10 +4,11 @@ import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.scene.layout.VBox;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
@@ -15,17 +16,14 @@ import apllication.MainApp;
 import apllication.model.Repo;
 import apllication.model.Source;
 
-public class RootLayoutController {
+public class FriendTapLayoutController {
 
-	@FXML private Button repoTapButton;
-	@FXML private Button friendTapButton;
-	@FXML private Button othersTapButton;
-	@FXML private VBox rootLayout;
+	@FXML private Button addRepo;
+	@FXML private VBox repoList;
 	
 	private MainApp mainApp;
-	private RepoTapLayoutController repoTapLayoutController = new RepoTapLayoutController();
 	
-	public RootLayoutController() {
+	public FriendTapLayoutController() {
 	}
 	
 	/**
@@ -45,14 +43,4 @@ public class RootLayoutController {
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
-    
-    
-    /**
-     * 버튼을 누르면 탭을 보여준다.
-     */
-    @FXML public void showRepoTapLayout() { mainApp.showRepoTapLayout(); }
-    
-    @FXML public void showfriendTapLayout() { mainApp.showFriendTapLayout(); }
-    
-    @FXML public void showOthersTapLayout() { mainApp.showOthersTapLayout(); }
 }

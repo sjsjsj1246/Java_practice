@@ -18,7 +18,7 @@ import javafx.collections.ObservableList;
  */
 public class Repo {
 
-    private final StringProperty Name;
+    private final StringProperty name;
     private final IntegerProperty sourceNum;
     private final ObjectProperty<LocalDate> modifiedDay;
     //저장소 내부의 소스 리스트
@@ -34,10 +34,10 @@ public class Repo {
     /**
      * 데이터를 초기화하는 생성자
      *
-     * @param Name
+     * @param name
      */
-    public Repo(String Name) {
-        this.Name = new SimpleStringProperty(Name);
+    public Repo(String name) {
+        this.name = new SimpleStringProperty(name);
 
         // 테스트를 위해 초기화하는 더미 데이터
         this.sourceNum = new SimpleIntegerProperty(0);
@@ -46,15 +46,15 @@ public class Repo {
     }
 
     public String getName() {
-        return Name.get();
+        return name.get();
     }
 
-    public void setName(String Name) {
-        this.Name.set(Name);
+    public void setName(String name) {
+        this.name.set(name);
     }
 
     public StringProperty nameProperty() {
-        return Name;
+        return name;
     }
     
     public int getSourceNum() {
@@ -73,7 +73,7 @@ public class Repo {
         return modifiedDay.get();
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setmodifiedDay(LocalDate birthday) {
         this.modifiedDay.set(birthday);
     }
 

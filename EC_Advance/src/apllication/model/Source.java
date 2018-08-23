@@ -8,6 +8,8 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 /**
  * 소스 모델 클래스
@@ -16,10 +18,12 @@ import javafx.beans.property.StringProperty;
  */
 public class Source {
 
-    private final StringProperty Name;
+    private final StringProperty name;
     private final IntegerProperty verNum;
     private final ObjectProperty<LocalDate> modifiedDay;
-
+    //저장소 내부의 소스 리스트
+  	private ObservableList<Version> versionData = FXCollections.observableArrayList();
+  	
     /**
      * 디폴트 생성자
      */
@@ -30,10 +34,10 @@ public class Source {
     /**
      * 데이터를 초기화하는 생성자
      *
-     * @param Name
+     * @param name
      */
-    public Source(String Name) {
-        this.Name = new SimpleStringProperty(Name);
+    public Source(String name) {
+        this.name = new SimpleStringProperty(name);
 
         // 테스트를 위해 초기화하는 더미 데이터
         this.verNum = new SimpleIntegerProperty(0);
@@ -41,15 +45,15 @@ public class Source {
     }
 
     public String getName() {
-        return Name.get();
+        return name.get();
     }
 
-    public void setName(String Name) {
-        this.Name.set(Name);
+    public void setName(String name) {
+        this.name.set(name);
     }
 
     public StringProperty nameProperty() {
-        return Name;
+        return name;
     }
     
     public int getVerNum() {
@@ -64,11 +68,11 @@ public class Source {
         return verNum;
     }
 
-    public LocalDate getmodifiedDay() {
+    public LocalDate getModifiedDay() {
         return modifiedDay.get();
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setModifiedDay(LocalDate birthday) {
         this.modifiedDay.set(birthday);
     }
 

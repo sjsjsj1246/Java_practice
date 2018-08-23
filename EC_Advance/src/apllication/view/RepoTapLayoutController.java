@@ -42,8 +42,6 @@ public class RepoTapLayoutController {
      */
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
-
-        // 테이블에 observable 리스트 데이터를 추가한다.
     }
     
     /**
@@ -60,6 +58,6 @@ public class RepoTapLayoutController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    	
     }
+    
 }
