@@ -8,6 +8,8 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 /**
  * 버전 모델 클래스
@@ -17,9 +19,12 @@ import javafx.beans.property.StringProperty;
 public class Version {
 
     private final StringProperty Name;
-    private final IntegerProperty verNum;
+    private final StringProperty writer;
     private final ObjectProperty<LocalDate> modifiedDay;
-
+    
+    //소스 내부의 버전 리스트
+    private ObservableList<Version> versionData = FXCollections.observableArrayList();
+    
     /**
      * 디폴트 생성자
      */
@@ -36,7 +41,7 @@ public class Version {
         this.Name = new SimpleStringProperty(Name);
 
         // 테스트를 위해 초기화하는 더미 데이터
-        this.verNum = new SimpleIntegerProperty(0);
+        this.writer = new SimpleStringProperty("홍길동");
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
     }
 
@@ -52,16 +57,16 @@ public class Version {
         return Name;
     }
     
-    public int getVerNum() {
-        return verNum.get();
+    public String getWriter() {
+        return writer.get();
     }
 
-    public void setVerNum(int sourceNum) {
-        this.verNum.set(sourceNum);
+    public void setWriter(String sourceNum) {
+        this.writer.set(sourceNum);
     }
 
-    public IntegerProperty verNumProperty() {
-        return verNum;
+    public StringProperty writerProperty() {
+        return writer;
     }
 
     public LocalDate getmodifiedDay() {

@@ -42,6 +42,8 @@ public class Repo {
         // 테스트를 위해 초기화하는 더미 데이터
         this.sourceNum = new SimpleIntegerProperty(0);
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
+        
+        //TODO 추후에 DB와 연동해서 소스 추가
         sourceData.add(new Source("test"));
     }
 

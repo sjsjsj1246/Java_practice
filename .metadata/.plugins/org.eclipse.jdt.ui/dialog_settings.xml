@@ -70,6 +70,8 @@
 	<section name="OverrideMethodDialog">
 		<item value="false" key="showtypes"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item value="1" key="index"/>
 	</section>

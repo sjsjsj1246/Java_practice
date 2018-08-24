@@ -10,7 +10,7 @@
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="350.0">
          <children>
-            <Button fx:id="repoTapButton" mnemonicParsing="false" onAction="#showRepoTapLayout" prefHeight="50.0" prefWidth="55.0">
+            <Button fx:id="repoTapButton" mnemonicParsing="false" onAction="#showRepoTapLayout" prefHeight="50.0" prefWidth="55.0" styleClass="transparent">
                <HBox.margin>
                   <Insets left="5.0" />
                </HBox.margin>

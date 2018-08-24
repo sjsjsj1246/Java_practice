@@ -21,7 +21,7 @@ public class Source {
     private final StringProperty name;
     private final IntegerProperty verNum;
     private final ObjectProperty<LocalDate> modifiedDay;
-    //저장소 내부의 소스 리스트
+    //소스 내부의 버전 리스트
   	private ObservableList<Version> versionData = FXCollections.observableArrayList();
   	
     /**
@@ -42,6 +42,9 @@ public class Source {
         // 테스트를 위해 초기화하는 더미 데이터
         this.verNum = new SimpleIntegerProperty(0);
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
+        
+        //TODO 추후에 DB와 연동해서 버전 추가
+        versionData.add(new Version("test"));
     }
 
     public String getName() {
