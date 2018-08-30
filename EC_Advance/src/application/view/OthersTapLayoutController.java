@@ -1,4 +1,4 @@
-package apllication.view;
+package application.view;
 
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
@@ -12,9 +12,9 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-import apllication.MainApp;
-import apllication.model.Repo;
-import apllication.model.Source;
+import application.MainApp;
+import application.model.Repo;
+import application.model.Source;
 
 public class OthersTapLayoutController {
 

@@ -1,4 +1,4 @@
-package apllication.model;
+package application.model;
 
 import java.time.LocalDate;
 
@@ -12,68 +12,70 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 /**
- * 버전 모델 클래스
+ * 소스 모델 클래스
  *
  * @brief 저장소의 정보를 담는 클래스
  */
-public class Version {
+public class Source {
 
-    private final StringProperty Name;
-    private final StringProperty writer;
+    private final StringProperty name;
+    private final IntegerProperty verNum;
     private final ObjectProperty<LocalDate> modifiedDay;
-    
     //소스 내부의 버전 리스트
-    private ObservableList<Version> versionData = FXCollections.observableArrayList();
-    
+  	private ObservableList<Version> versionData = FXCollections.observableArrayList();
+  	
     /**
      * 디폴트 생성자
      */
-    public Version() {
+    public Source() {
         this(null);
     }
 
     /**
      * 데이터를 초기화하는 생성자
      *
-     * @param Name
+     * @param name
      */
-    public Version(String Name) {
-        this.Name = new SimpleStringProperty(Name);
+    public Source(String name) {
+        this.name = new SimpleStringProperty(name);
 
         // 테스트를 위해 초기화하는 더미 데이터
-        this.writer = new SimpleStringProperty("홍길동");
+        this.verNum = new SimpleIntegerProperty(0);
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
+        
+        //TODO 추후에 DB와 연동해서 버전 추가
+        versionData.add(new Version("test"));
     }
 
     public String getName() {
-        return Name.get();
+        return name.get();
     }
 
-    public void setName(String Name) {
-        this.Name.set(Name);
+    public void setName(String name) {
+        this.name.set(name);
     }
 
     public StringProperty nameProperty() {
-        return Name;
+        return name;
     }
     
-    public String getWriter() {
-        return writer.get();
+    public int getVerNum() {
+        return verNum.get();
     }
 
-    public void setWriter(String sourceNum) {
-        this.writer.set(sourceNum);
+    public void setVerNum(int sourceNum) {
+        this.verNum.set(sourceNum);
     }
 
-    public StringProperty writerProperty() {
-        return writer;
+    public IntegerProperty verNumProperty() {
+        return verNum;
     }
 
-    public LocalDate getmodifiedDay() {
+    public LocalDate getModifiedDay() {
         return modifiedDay.get();
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setModifiedDay(LocalDate birthday) {
         this.modifiedDay.set(birthday);
     }
 

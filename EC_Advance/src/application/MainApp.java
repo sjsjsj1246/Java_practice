@@ -1,10 +1,10 @@
-package apllication;
+package application;
 
 import java.io.IOException;
 
-import apllication.model.Repo;
-import apllication.model.Source;
-import apllication.view.*;
+import application.model.Repo;
+import application.model.Source;
+import application.view.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package apllication.view;
+package application.view;
 
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
@@ -12,18 +12,18 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-import apllication.MainApp;
-import apllication.model.Repo;
-import apllication.model.Source;
+import application.MainApp;
+import application.model.Repo;
+import application.model.Source;
 
-public class FriendTapLayoutController {
+public class RepoTapLayoutController {
 
 	@FXML private Button addRepo;
 	@FXML private VBox repoList;
 	
 	private MainApp mainApp;
 	
-	public FriendTapLayoutController() {
+	public RepoTapLayoutController() {
 	}
 	
 	/**
@@ -43,4 +43,21 @@ public class FriendTapLayoutController {
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
+    
+    /**
+     * 
+     */
+    @FXML
+    private void add() {
+    	try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("view/RepoLayout.fxml"));
+            VBox repo = (VBox) loader.load();
+
+            repoList.getChildren().add(repo);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
 }
