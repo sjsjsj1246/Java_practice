@@ -19,7 +19,7 @@ import javafx.collections.ObservableList;
 public class Version {
 
     private final StringProperty Name;
-    private final StringProperty writer;
+    private final StringProperty author;
     private final ObjectProperty<LocalDate> modifiedDay;
     
     //소스 내부의 버전 리스트
@@ -41,7 +41,7 @@ public class Version {
         this.Name = new SimpleStringProperty(Name);
 
         // 테스트를 위해 초기화하는 더미 데이터
-        this.writer = new SimpleStringProperty("홍길동");
+        this.author = new SimpleStringProperty("홍길동");
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
     }
 
@@ -57,23 +57,23 @@ public class Version {
         return Name;
     }
     
-    public String getWriter() {
-        return writer.get();
+    public String getAuthor() {
+        return author.get();
     }
 
-    public void setWriter(String sourceNum) {
-        this.writer.set(sourceNum);
+    public void setAuthor(String sourceNum) {
+        this.author.set(sourceNum);
     }
 
-    public StringProperty writerProperty() {
-        return writer;
+    public StringProperty authorProperty() {
+        return author;
     }
 
-    public LocalDate getmodifiedDay() {
+    public LocalDate getModifiedDay() {
         return modifiedDay.get();
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setModifiedDay(LocalDate birthday) {
         this.modifiedDay.set(birthday);
     }
 

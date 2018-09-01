@@ -10,7 +10,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.Button;
 
 public class VersionLayoutController {
-
+	
 	@FXML private TableView<Version> versionTable;
 	@FXML private TableColumn<Version, String> versionNameColumn;
 	@FXML private TableColumn<Version, String> authorColumn;
@@ -36,6 +36,9 @@ public class VersionLayoutController {
 	@FXML
 	private void initialize() {
 		// 연락처 테이블 초기화
+		versionNameColumn.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
+		authorColumn.setCellValueFactory(cellData -> cellData.getValue().authorProperty());
+		modifiedDayColumn.setCellValueFactory(cellData -> cellData.getValue().modifiedDayProperty());
 	}
 	
 	/**

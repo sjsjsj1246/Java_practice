@@ -96,6 +96,15 @@ public class MainApp extends Application {
             OthersTapLayoutController othersTapLayoutController = othersTapLayoutLoader.getController();
             othersTapLayoutController.setMainApp(this);
             
+            //fxml 파일에서 버전 레이아웃을 가져온다.
+            FXMLLoader versionLayoutLoader = new FXMLLoader();
+            versionLayoutLoader.setLocation(MainApp.class.getResource("view/OthersTapLayout.fxml"));
+            othersTapLayout = (VBox) versionLayoutLoader.load();
+			
+            // 메인 애플리케이션이 기타 탭 컨트롤러를 이용할 수 있게 한다.
+            OthersTapLayoutController versionLayoutController = versionLayoutLoader.getController();
+            versionLayoutController.setMainApp(this);
+            
             // 상위 레이아웃을 포함하는 scene을 보여준다.
          	Scene scene = new Scene(rootLayout);
          	primaryStage.setScene(scene);
