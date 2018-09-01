@@ -82,4 +82,8 @@ public class Repo {
     public ObjectProperty<LocalDate> modifiedDayProperty() {
         return modifiedDay;
     }
+    
+    public ObservableList<Source> getSourceData() {
+    	return sourceData;
+    }
 }

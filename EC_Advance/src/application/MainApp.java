@@ -27,6 +27,7 @@ public class MainApp extends Application {
 	@FXML private VBox othersTapLayout;
 	
 	//연락처에 대한 observable 리스트
+	private ObservableList<RepoLayoutController> RepoLayoutData = FXCollections.observableArrayList();
 	private ObservableList<Repo> repoData = FXCollections.observableArrayList();
 	
 	/**
@@ -38,7 +39,6 @@ public class MainApp extends Application {
 		 * TODO DB와 연동할 것
 		 */
 		repoData.add(new Repo("test"));
-		
 	}
 	
 	@Override
@@ -47,7 +47,6 @@ public class MainApp extends Application {
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("test");
 		this.primaryStage.setResizable(false);
-		
 		initLayout();
 		showRepoTapLayout();
 	}
