@@ -7767,9 +7767,15 @@ Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.Val
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
 	... 65 more
 <<<<<<< HEAD
+<<<<<<< HEAD
 !SESSION 2018-08-25 02:21:31.218 -----------------------------------------------
 eclipse.buildId=4.8.0.I20180611-0500
 java.version=10.0.1
+=======
+!SESSION 2018-08-24 22:25:52.376 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=10.0.2
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 =======
 !SESSION 2018-08-24 22:25:52.376 -----------------------------------------------
 eclipse.buildId=4.8.0.I20180611-0500
@@ -7781,7 +7787,11 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.core 2 0 2018-08-25 02:22:36.031
+=======
+!ENTRY org.eclipse.egit.core 2 0 2018-08-24 22:26:05.704
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 =======
 !ENTRY org.eclipse.egit.core 2 0 2018-08-24 22:26:05.704
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
@@ -7872,6 +7882,7 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -8797,15 +8808,21 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\LG Gram'. If this is
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-08-24 22:26:15.186
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\sjsjs'. If this is
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 !ENTRY org.eclipse.e4.ui.workbench 2 0 2018-08-25 02:22:48.144
 !MESSAGE Removing part descriptor with the 'org.eclipse.pde.runtime.RegistryBrowser' id and the 'Plug-in Registry' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
@@ -8843,11 +8860,16 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 eclipse.buildId=4.8.0.I20180611-0500
 java.version=10.0.1
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-08-24 23:13:18.766
 !MESSAGE No repository found at https://docs.oracle.com/javase/10/docs/api/javax/xml/bind/annotation/package-summary.html.
 !SESSION 2018-08-26 23:45:29.851 -----------------------------------------------
 eclipse.buildId=4.8.0.I20180611-0500
 java.version=10.0.2
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
@@ -8855,7 +8877,11 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.core 2 0 2018-08-25 02:25:50.309
+=======
+!ENTRY org.eclipse.egit.core 2 0 2018-08-26 23:45:38.612
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 =======
 !ENTRY org.eclipse.egit.core 2 0 2018-08-26 23:45:38.612
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
@@ -8946,6 +8972,7 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -9578,6 +9605,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-08-26 23:45:48.423
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -9668,6 +9697,9 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
 	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
@@ -9686,21 +9718,28 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-08-25 02:25:58.024
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\LG Gram'. If this is
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-08-30 14:32:40.648
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\sjsjs'. If this is
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 !ENTRY org.eclipse.core.runtime 4 0 2018-08-25 02:28:37.098
 !MESSAGE Invalid input url:platform:/plugin/org.eclipse.pde.ui/$nl$/icons/eview16/plugins.png
@@ -9750,6 +9789,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 !ENTRY org.eclipse.ui 4 0 2018-08-30 14:41:42.736
 !MESSAGE The proxied handler for 'org.eclipse.fx.ide.jdt.ui.internal.handler.AddFXBeanGetterSetterHandler' could not be loaded
 !STACK 1
@@ -9763,6 +9804,9 @@ org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.fx.ide.jdt.ui" was 
 	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:131)
 	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
@@ -9770,6 +9814,7 @@ org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.fx.ide.jdt.ui" was 
 	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
 	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
 	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
@@ -9786,6 +9831,8 @@ org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.fx.ide.jdt.ui" was 
 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
 	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
 	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:176)
@@ -9812,6 +9859,9 @@ org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.fx.ide.jdt.ui" was 
 	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
 	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
@@ -9834,6 +9884,7 @@ org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.fx.ide.jdt.ui" was 
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -9889,6 +9940,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditException
 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
@@ -9919,6 +9972,9 @@ java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditExce
 	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:131)
 	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
@@ -9926,6 +9982,7 @@ java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditExce
 	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
 	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
 	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
@@ -9942,6 +9999,8 @@ java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditExce
 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
 	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
 	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:176)
@@ -9968,6 +10027,9 @@ java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditExce
 	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
 	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
@@ -9990,6 +10052,7 @@ java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditExce
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -10067,6 +10130,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.ValidateEditException cannot be found by org.eclipse.fx.ide.jdt.ui_3.3.0.201805280700
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
@@ -10154,6 +10219,9 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
 	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
@@ -10171,6 +10239,7 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -10248,6 +10317,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-08-31 22:25:49.791
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -10338,6 +10409,9 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
 	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
@@ -10355,6 +10429,7 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -10436,6 +10511,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-09-02 03:39:15.682
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -10523,6 +10600,9 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
 	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
@@ -10540,6 +10620,7 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 
@@ -10590,6 +10671,8 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.pde
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:93)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-09-02 04:10:58.265
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -10689,11 +10772,15 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
@@ -10720,6 +10807,8 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
@@ -10813,6 +10902,9 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
 	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
@@ -10831,8 +10923,11 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
 =======
+=======
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
 
 !ENTRY org.eclipse.egit.ui 2 0 2018-09-04 23:58:49.798
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
@@ -10892,4 +10987,7 @@ org.eclipse.core.runtime.OperationCanceledException
 	at org.eclipse.xtext.ui.editor.hover.AbstractEObjectHover.getHoverInfo2(AbstractEObjectHover.java:87)
 	at org.eclipse.xtext.ui.editor.hover.AbstractCompositeHover.getHoverInfo2(AbstractCompositeHover.java:94)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+<<<<<<< HEAD
+>>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad
+=======
 >>>>>>> b5d034fdf354fe5123b641ea876dfe086a77d9ad

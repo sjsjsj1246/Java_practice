@@ -1,0 +1,50 @@
+
+.rootBackground{
+	-fx-background-image: url("../../../resources/RootLayout.png");
+	-fx-background-size: 350px;
+}
+
+.repoTapBackground{
+	-fx-background-image: url("../../../resources/RepoTapLayout.png");
+	-fx-background-size: 350px;
+}
+
+.friendTapBackground{
+	-fx-background-image: url("../../../resources/FriendTapLayout.png");
+	-fx-background-size: 350px;
+}
+
+.othersTapBackground{
+	-fx-background-image: url("../../../resources/OthersTapLayout.png");
+	-fx-background-size: 350px;
+}
+
+.friendBackground{
+	-fx-background-image: url("../../../resources/FriendLayout.png");
+	-fx-background-size: 300px;
+}
+
+.repoBackground{
+	-fx-background-image: url("../../../resources/RepoLayout.png");
+	-fx-background-size: 300px;
+}
+
+.sourceBackground{
+	-fx-background-image: url("../../../resources/SourceLayout.png");
+	-fx-background-size: 300px;
+}
+
+.addButtonBackground{
+	-fx-background-image: url("../../../resources/AddButton.png");
+	-fx-background-size: 35px;
+}
+
+
+.transparent{
+	-fx-background-color: transparent;
+}
+
+.font{
+	-fx-font-family: "BMDOHYEON";
+	-fx-text-fill: black;
+}
