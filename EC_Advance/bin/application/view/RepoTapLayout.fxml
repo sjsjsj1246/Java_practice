@@ -56,14 +56,17 @@
                <content>
                   <VBox fx:id="repoList" prefHeight="520.0" prefWidth="300.0" spacing="20.0" translateX="20.0">
                      <padding>
-                        <Insets top="20.0" />
+                        <Insets bottom="20.0" top="20.0" />
                      </padding></VBox>
                </content>
             </ScrollPane>
-            <Button fx:id="addRepo" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="35.0" StackPane.alignment="BOTTOM_RIGHT">
+            <Button fx:id="addRepo" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="35.0" styleClass="addButtonBackground" StackPane.alignment="BOTTOM_RIGHT">
                <StackPane.margin>
                   <Insets bottom="20.0" right="30.0" />
                </StackPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
          </children>
       </StackPane>
