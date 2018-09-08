@@ -27,7 +27,7 @@ public class MainApp extends Application {
 	@FXML private VBox othersTapLayout;
 	
 	//연락처에 대한 observable 리스트
-	private ObservableList<RepoLayoutController> RepoLayoutData = FXCollections.observableArrayList();
+	private ObservableList<RepoLayoutController> repoLayoutControllerData = FXCollections.observableArrayList();
 	private ObservableList<Repo> repoData = FXCollections.observableArrayList();
 	
 	/**
