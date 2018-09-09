@@ -82,4 +82,7 @@ public class Source {
     public ObjectProperty<LocalDate> modifiedDayProperty() {
         return modifiedDay;
     }
+    public ObservableList<Version> getVersionData() {
+    	return versionData;
+    }
 }

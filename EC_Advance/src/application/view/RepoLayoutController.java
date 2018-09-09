@@ -3,6 +3,8 @@ package application.view;
 import java.time.LocalDate;
 import application.MainApp;
 import application.model.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TableColumn;
@@ -18,13 +20,15 @@ public class RepoLayoutController {
 	@FXML private Button others;
 	@FXML private Button goSource;
 	
+	private ObservableList<SourceLayoutController> sourceLayoutControllerData = FXCollections.observableArrayList();
+	
 	private MainApp mainApp;
+	private int repoIndex;
 	
 	/**
 	 * »ý¼ºÀÚ
 	 */
 	public RepoLayoutController() {
-		
 	}
 	
 	/**
@@ -44,5 +48,13 @@ public class RepoLayoutController {
 		this.mainApp = mainApp;
 		
 		
+	}
+	/*
+	public void test() {
+		repoName.setText(Integer.toString(repoIndex));
+	}*/
+	
+	public ObservableList<SourceLayoutController> getsourceLayoutControllerData() {
+		return sourceLayoutControllerData;
 	}
 }

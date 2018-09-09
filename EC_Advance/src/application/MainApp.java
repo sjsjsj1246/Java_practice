@@ -2,8 +2,7 @@ package application;
 
 import java.io.IOException;
 
-import application.model.Repo;
-import application.model.Source;
+import application.model.*;
 import application.view.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -27,8 +26,8 @@ public class MainApp extends Application {
 	@FXML private VBox othersTapLayout;
 	
 	//연락처에 대한 observable 리스트
-	private ObservableList<RepoLayoutController> repoLayoutControllerData = FXCollections.observableArrayList();
 	private ObservableList<Repo> repoData = FXCollections.observableArrayList();
+	private ObservableList<RepoLayoutController> repoLayoutControllerData = FXCollections.observableArrayList();
 	
 	/**
 	 * 생성자
@@ -38,7 +37,21 @@ public class MainApp extends Application {
 		 * 테스트 데이터를 추가한다
 		 * TODO DB와 연동할 것
 		 */
-		repoData.add(new Repo("test"));
+		repoData.add(new Repo("test1"));
+		repoData.get(0).getSourceData().add(new Source("test1"));
+		repoData.get(0).getSourceData().get(0).getVersionData().add(new Version("Ini"));
+		
+		repoData.add(new Repo("test2"));
+		repoData.get(1).getSourceData().add(new Source("test1"));
+		repoData.get(1).getSourceData().get(0).getVersionData().add(new Version("Ini"));
+		// 컨트롤러 생성자에 인수를 추가하면 안되는듯.
+	//	repoLayoutControllerData.add(new RepoLayoutController(0));
+	//	repoLayoutControllerData.get(0).getsourceLayoutControllerData().add(new SourceLayoutController(0));
+	//	repoLayoutControllerData.get(0).getsourceLayoutControllerData().get(0).getversionLayoutControllerData().add(new VersionLayoutController(0));
+		
+		//repoLayoutControllerData.add(new RepoLayoutController(1));
+	//	repoLayoutControllerData.get(1).getsourceLayoutControllerData().add(new SourceLayoutController(0));
+	//	repoLayoutControllerData.get(1).getsourceLayoutControllerData().get(0).getversionLayoutControllerData().add(new VersionLayoutController(0));
 	}
 	
 	@Override

@@ -22,12 +22,13 @@ public class VersionLayoutController {
 	@FXML private Button add;
 	
 	private MainApp mainApp;
+	private int versionIndex;
 	
 	/**
 	 * »ý¼ºÀÚ
 	 */
-	public VersionLayoutController() {
-		
+	public VersionLayoutController(int n) {
+		versionIndex = n;
 	}
 	
 	/**

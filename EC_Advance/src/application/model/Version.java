@@ -22,8 +22,6 @@ public class Version {
     private final StringProperty author;
     private final ObjectProperty<LocalDate> modifiedDay;
     
-    //소스 내부의 버전 리스트
-    private ObservableList<Version> versionData = FXCollections.observableArrayList();
     
     /**
      * 디폴트 생성자
