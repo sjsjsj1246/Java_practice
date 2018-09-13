@@ -14,11 +14,10 @@ import javafx.scene.control.Label;;
 
 public class SourceLayoutController {
 
-	@FXML private Label modifiedDay; 
-	@FXML private Label repoName;
-	@FXML private Label sourceNum;
+	@FXML private Label sourceName;
+	@FXML private Label modifiedDay;
 	@FXML private Button others;
-	@FXML private Button goSource;
+	@FXML private Button goVersion;
 	
 	private ObservableList<VersionLayoutController> versionLayoutControllerData = FXCollections.observableArrayList();
 	
@@ -28,8 +27,8 @@ public class SourceLayoutController {
 	/**
 	 * »ý¼ºÀÚ
 	 */
-	public SourceLayoutController(int n) {
-		sourceIndex = n;
+	public SourceLayoutController() {
+
 	}
 	
 	/**
@@ -51,7 +50,14 @@ public class SourceLayoutController {
 	 */
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
-		
+	}
+	
+	public void setModifiedDay(LocalDate modifiedDay) {
+		this.modifiedDay.setText(modifiedDay.toString());
+	}
+	
+	public void setSourceName(String repoName) {
+		this.sourceName.setText(repoName);
 		
 	}
 	
