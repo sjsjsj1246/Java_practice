@@ -3,6 +3,7 @@ package application.view;
 import java.time.LocalDate;
 import application.MainApp;
 import application.model.*;
+import javafx.beans.property.ObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -40,6 +41,10 @@ public class RepoLayoutController {
 		
 	}
 	
+	public void setRepoIndex(int index) {
+		this.repoIndex = index;
+	}
+	
 	/**
 	 * 참조를 유지하기 위해 메인 애플리케이션 호출.
 	 * @param mainApp
@@ -47,12 +52,21 @@ public class RepoLayoutController {
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 		
+	}
+
+	public void setModifiedDay(LocalDate modifiedDay) {
+		//this.modifiedDay.setText(modifiedDay.toString());
+	}
+	
+	public void setRepoName(String repoName) {
+		this.repoName.setText(repoName);
 		
 	}
-	/*
-	public void test() {
-		repoName.setText(Integer.toString(repoIndex));
-	}*/
+
+	public void setsourceNum(int sourceNum) {
+		this.sourceNum.setText(Integer.toString(sourceNum));
+	
+	}
 	
 	public ObservableList<SourceLayoutController> getsourceLayoutControllerData() {
 		return sourceLayoutControllerData;

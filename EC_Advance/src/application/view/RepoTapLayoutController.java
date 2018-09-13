@@ -48,16 +48,8 @@ public class RepoTapLayoutController {
      * 
      */
     @FXML
-    private void add() {
-    	try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/RepoLayout.fxml"));
-            VBox repo = (VBox) loader.load();
-
-            repoList.getChildren().add(repo);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void addRepoLayout(VBox repoLayout) {
+    	repoList.getChildren().add(repoLayout);
     }
     
 }

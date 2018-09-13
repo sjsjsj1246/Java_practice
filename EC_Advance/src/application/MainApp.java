@@ -25,6 +25,8 @@ public class MainApp extends Application {
 	@FXML private VBox friendTapLayout;
 	@FXML private VBox othersTapLayout;
 	
+	private RepoTapLayoutController repoTapLayoutController;
+	
 	//연락처에 대한 observable 리스트
 	private ObservableList<Repo> repoData = FXCollections.observableArrayList();
 	private ObservableList<RepoLayoutController> repoLayoutControllerData = FXCollections.observableArrayList();
@@ -44,14 +46,35 @@ public class MainApp extends Application {
 		repoData.add(new Repo("test2"));
 		repoData.get(1).getSourceData().add(new Source("test1"));
 		repoData.get(1).getSourceData().get(0).getVersionData().add(new Version("Ini"));
-		// 컨트롤러 생성자에 인수를 추가하면 안되는듯.
-	//	repoLayoutControllerData.add(new RepoLayoutController(0));
-	//	repoLayoutControllerData.get(0).getsourceLayoutControllerData().add(new SourceLayoutController(0));
-	//	repoLayoutControllerData.get(0).getsourceLayoutControllerData().get(0).getversionLayoutControllerData().add(new VersionLayoutController(0));
 		
-		//repoLayoutControllerData.add(new RepoLayoutController(1));
-	//	repoLayoutControllerData.get(1).getsourceLayoutControllerData().add(new SourceLayoutController(0));
-	//	repoLayoutControllerData.get(1).getsourceLayoutControllerData().get(0).getversionLayoutControllerData().add(new VersionLayoutController(0));
+		
+	}
+	
+	private void setDataToLayout(ObservableList<Repo> repoData) {
+		int repoDataSize = repoData.size();
+		for(int i=0; i<repoDataSize; i++) {
+			try {
+	            FXMLLoader loader = new FXMLLoader();
+	            loader.setLocation(MainApp.class.getResource("view/RepoLayout.fxml"));
+	            VBox repoLayout = (VBox) loader.load();
+
+	            RepoLayoutController repoLayoutController = loader.getController();
+	            repoLayoutController.setRepoIndex(i);
+	            repoLayoutControllerData.add(repoLayoutController);
+	            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
+	            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
+	            repoLayoutController.setRepoName(repoData.get(i).getRepoName());
+	            repoLayoutController.setsourceNum(repoData.get(i).getSourceNum());
+	            repoTapLayoutController.addRepoLayout(repoLayout);
+	            
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+			
+			/*int sourceSize = repoData.get(i).getSourceData().size();
+			for(int j=0; j<sourceSize; j++) {
+				}*/
+		}
 	}
 	
 	@Override
@@ -61,7 +84,9 @@ public class MainApp extends Application {
 		this.primaryStage.setTitle("test");
 		this.primaryStage.setResizable(false);
 		initLayout();
+		setDataToLayout(repoData);
 		showRepoTapLayout();
+		
 	}
 
 	/**
@@ -85,7 +110,7 @@ public class MainApp extends Application {
             repoTapLayout = (VBox) repoTapLayoutLoader.load();
 			
 			// 메인 애플리케이션이 저장소 탭 컨트롤러를 이용할 수 있게 한다.
-            RepoTapLayoutController repoTapLayoutController = repoTapLayoutLoader.getController();
+            repoTapLayoutController = repoTapLayoutLoader.getController();
             repoTapLayoutController.setMainApp(this);
             
             

@@ -31,6 +31,10 @@ public class VersionLayoutController {
 		versionIndex = n;
 	}
 	
+	public void setVersionIndex(int index) {
+		this.versionIndex = index;
+	}
+	
 	/**
 	 * 컨트롤러 클래스 초기화
 	 */

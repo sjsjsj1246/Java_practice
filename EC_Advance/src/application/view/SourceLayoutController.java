@@ -41,6 +41,10 @@ public class SourceLayoutController {
 		
 	}
 	
+	public void setSourceIndex(int index) {
+		this.sourceIndex = index;
+	}
+	
 	/**
 	 * 참조를 유지하기 위해 메인 애플리케이션 호출.
 	 * @param mainApp
