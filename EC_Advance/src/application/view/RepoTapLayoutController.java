@@ -19,7 +19,7 @@ import application.model.Source;
 public class RepoTapLayoutController {
 
 	@FXML private Button addRepo;
-	@FXML private VBox repoList;
+	@FXML private VBox children;
 	
 	private MainApp mainApp;
 	
@@ -48,8 +48,8 @@ public class RepoTapLayoutController {
      * 
      */
     @FXML
-    public void addRepoLayout(VBox repoLayout) {
-    	repoList.getChildren().add(repoLayout);
+    public void setChildren(VBox children) {
+    	this.children = children;
     }
     
 }

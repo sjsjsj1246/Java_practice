@@ -43,10 +43,11 @@
     <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
     <fullyQualifiedTypeName name="application.view.RepoTapLayoutController"/>
     <fullyQualifiedTypeName name="javafx.collections.FXCollections"/>
-    <fullyQualifiedTypeName name="application.MainApp"/>
     <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
     <fullyQualifiedTypeName name="application.view.RepoLayoutController"/>
     <fullyQualifiedTypeName name="application.view.SourceLayoutController"/>
     <fullyQualifiedTypeName name="application.view.VersionLayoutController"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="application.MainApp"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

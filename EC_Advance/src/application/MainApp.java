@@ -2,20 +2,24 @@ package application;
 
 import java.io.IOException;
 
-import application.model.*;
-import application.view.*;
+import application.model.Repo;
+import application.model.Source;
+import application.model.Version;
+import application.view.FriendTapLayoutController;
+import application.view.OthersTapLayoutController;
+import application.view.RepoLayoutController;
+import application.view.RepoTapLayoutController;
+import application.view.RootLayoutController;
+import application.view.SourceLayoutController;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 public class MainApp extends Application {
 
@@ -24,6 +28,7 @@ public class MainApp extends Application {
 	@FXML private VBox repoTapLayout;
 	@FXML private VBox friendTapLayout;
 	@FXML private VBox othersTapLayout;
+	@FXML private VBox repoList;
 	
 	private RepoTapLayoutController repoTapLayoutController;
 	
@@ -39,6 +44,9 @@ public class MainApp extends Application {
 		 * 테스트 데이터를 추가한다
 		 * TODO DB와 연동할 것
 		 */
+		repoList.setPrefWidth(300);
+		repoList.setPrefHeight(520);
+		
 		repoData.add(new Repo("test1"));
 		repoData.get(0).getSourceData().add(new Source("test1"));
 		repoData.get(0).getSourceData().get(0).getVersionData().add(new Version("Ini"));
@@ -65,7 +73,7 @@ public class MainApp extends Application {
 	            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 	            repoLayoutController.setRepoName(repoData.get(i).getRepoName());
 	            repoLayoutController.setsourceNum(repoData.get(i).getSourceNum());
-	            repoTapLayoutController.addRepoLayout(repoLayout);
+	            repoList.getChildren().add(repoLayout);
 	            
 	        } catch (IOException e) {
 	            e.printStackTrace();
@@ -76,15 +84,15 @@ public class MainApp extends Application {
 				try {
 		            FXMLLoader loader = new FXMLLoader();
 		            loader.setLocation(MainApp.class.getResource("view/SourceLayout.fxml"));
-		            VBox soucrLayout = (VBox) loader.load();
+		            HBox soucrLayout = (HBox) loader.load();
 
 		            SourceLayoutController sourceLayoutController = loader.getController();
 		            sourceLayoutController.setSourceIndex(j);
-		            repoLayoutControllerData.get(j).getsourceLayoutControllerData().add(sourceLayoutController);
+		            repoLayoutControllerData.get(i).getsourceLayoutControllerData().add(sourceLayoutController);
 		            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
 		            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 		            sourceLayoutController.setSourceName(repoData.get(i).getSourceData().get(j).getName());
-		            repoTapLayoutController.addRepoLayout(soucrLayout);
+		            
 		            
 		        } catch (IOException e) {
 		            e.printStackTrace();
