@@ -17,7 +17,7 @@ public class RepoLayoutController {
 	@FXML private Label sourceNum;
 	@FXML private Button others;
 	@FXML private Button goSource;
-	@FXML private VBox sourceList;
+	private VBox sourceList;
 	
 	private ObservableList<SourceLayoutController> sourceLayoutControllerData = FXCollections.observableArrayList();
 	
@@ -72,5 +72,9 @@ public class RepoLayoutController {
 	
 	public VBox getSourceList() {
 		return sourceList;
+	}
+	
+	public void showSourceList() {
+		mainApp.getRepoTapLayoutController().setChildren(sourceList);
 	}
 }

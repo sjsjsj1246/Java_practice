@@ -211,6 +211,14 @@ public class MainApp extends Application {
 		return repoData;
 	}
 	
+	public VBox getRepoList() {
+		return repoList;
+	}
+	
+	public RepoTapLayoutController getRepoTapLayoutController() {
+		return repoTapLayoutController;
+	}
+	
 	public static void main(String[] args) {
 		launch(args);
 	}

@@ -1,20 +1,9 @@
 package application.view;
 
-import javafx.event.EventHandler;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
-import javafx.scene.layout.VBox;
-import javafx.scene.Cursor;
-import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
-
-import java.io.IOException;
-
 import application.MainApp;
-import application.model.Repo;
-import application.model.Source;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
 
 public class RepoTapLayoutController {
 
@@ -44,10 +33,6 @@ public class RepoTapLayoutController {
         this.mainApp = mainApp;
     }
     
-    /**
-     * 
-     */
-    @FXML
     public void setChildren(VBox children) {
     	this.children = children;
     }
