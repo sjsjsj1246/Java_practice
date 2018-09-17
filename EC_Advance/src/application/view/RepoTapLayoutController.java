@@ -34,7 +34,7 @@ public class RepoTapLayoutController {
     }
     
     public void addRepoLayout(VBox repoLayout) {
-    	this.children = children;
+    	this.children;
     }
  
     public VBox getChildren() {

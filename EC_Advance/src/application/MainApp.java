@@ -44,8 +44,6 @@ public class MainApp extends Application {
 		 * 테스트 데이터를 추가한다
 		 * TODO DB와 연동할 것
 		 */
-		repoList.setPrefWidth(300);
-		repoList.setPrefHeight(520);
 		
 		repoData.add(new Repo("test1"));
 		repoData.get(0).getSourceData().add(new Source("test1"));
@@ -73,7 +71,7 @@ public class MainApp extends Application {
 	            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 	            repoLayoutController.setRepoName(repoData.get(i).getRepoName());
 	            repoLayoutController.setsourceNum(repoData.get(i).getSourceNum());
-	            repoList.getChildren().add(repoLayout);
+	            
 	            
 	        } catch (IOException e) {
 	            e.printStackTrace();
