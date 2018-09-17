@@ -55,7 +55,6 @@ public class MainApp extends Application {
 		repoData.get(1).getSourceData().add(new Source("test1"));
 		repoData.get(1).getSourceData().get(0).getVersionData().add(new Version("Ini"));
 		
-		
 	}
 	
 	private void setDataToLayout(ObservableList<Repo> repoData) {
@@ -68,6 +67,7 @@ public class MainApp extends Application {
 
 	            RepoLayoutController repoLayoutController = loader.getController();
 	            repoLayoutController.setRepoIndex(i);
+	            repoLayoutController.setMainApp(this);
 	            repoLayoutControllerData.add(repoLayoutController);
 	            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
 	            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
@@ -82,6 +82,7 @@ public class MainApp extends Application {
 			int sourceSize = repoData.get(i).getSourceData().size();
 			for(int j=0; j<sourceSize; j++) {
 				try {
+					
 		            FXMLLoader loader = new FXMLLoader();
 		            loader.setLocation(MainApp.class.getResource("view/SourceLayout.fxml"));
 		            HBox soucrLayout = (HBox) loader.load();
@@ -92,9 +93,10 @@ public class MainApp extends Application {
 		            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
 		            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 		            sourceLayoutController.setSourceName(repoData.get(i).getSourceData().get(j).getName());
+		            sourceLayoutController.setMainApp(this);
 		            repoLayoutControllerData.get(j).getSourceList().getChildren().add(soucrLayout);
 		            
-		            
+		           
 		        } catch (IOException e) {
 		            e.printStackTrace();
 		        }
@@ -209,10 +211,6 @@ public class MainApp extends Application {
 	 */
 	public ObservableList<Repo> getRepoData(){
 		return repoData;
-	}
-	
-	public VBox getRepoList() {
-		return repoList;
 	}
 	
 	public RepoTapLayoutController getRepoTapLayoutController() {

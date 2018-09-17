@@ -33,8 +33,11 @@ public class RepoTapLayoutController {
         this.mainApp = mainApp;
     }
     
-    public void setChildren(VBox children) {
+    public void addRepoLayout(VBox repoLayout) {
     	this.children = children;
     }
-    
+ 
+    public VBox getChildren() {
+    	return children;
+    }
 }
