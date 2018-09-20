@@ -44,7 +44,7 @@ public class Source {
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
         
         //TODO 추후에 DB와 연동해서 버전 추가
-        versionData.add(new Version("test"));
+        //versionData.add(new Version("test"));
     }
 
     public String getName() {

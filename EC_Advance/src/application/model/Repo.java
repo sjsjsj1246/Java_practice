@@ -44,7 +44,7 @@ public class Repo {
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
         
         //TODO 추후에 DB와 연동해서 소스 추가
-        sourceData.add(new Source("test"));
+        //sourceData.add(new Source("test"));
     }
 
     public String getRepoName() {

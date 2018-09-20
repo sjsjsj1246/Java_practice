@@ -1,14 +1,25 @@
 package application.view;
 
-import application.MainApp;
+import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.layout.VBox;
+import javafx.scene.Cursor;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+
+import java.io.IOException;
+
+import application.MainApp;
+import application.model.Repo;
+import application.model.Source;
 
 public class RepoTapLayoutController {
 
 	@FXML private Button addRepo;
-	@FXML private VBox children;
+	@FXML private VBox repoList;
 	
 	private MainApp mainApp;
 	
@@ -33,11 +44,12 @@ public class RepoTapLayoutController {
         this.mainApp = mainApp;
     }
     
+    /**
+     * 
+     */
+    @FXML
     public void addRepoLayout(VBox repoLayout) {
-    	this.children;
+    	repoList.getChildren().add(repoLayout);
     }
- 
-    public VBox getChildren() {
-    	return children;
-    }
+    
 }

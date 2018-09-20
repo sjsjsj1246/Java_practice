@@ -1,9 +1,19 @@
 package application.view;
 
-import application.MainApp;
+import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
+
+import java.io.IOException;
+
+import application.MainApp;
+import application.model.Repo;
+import application.model.Source;
 
 public class RootLayoutController {
 
@@ -13,6 +23,7 @@ public class RootLayoutController {
 	@FXML private VBox rootLayout;
 	
 	private MainApp mainApp;
+	private RepoTapLayoutController repoTapLayoutController = new RepoTapLayoutController();
 	
 	public RootLayoutController() {
 	}
