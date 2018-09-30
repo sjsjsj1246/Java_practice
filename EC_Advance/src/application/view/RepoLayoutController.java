@@ -80,4 +80,7 @@ public class RepoLayoutController {
 		return sourceList;
 	}
 	
+	public void showSourceList() {
+		mainApp.getRepoTapLayoutController().setNodeList(sourceList);
+	}
 }

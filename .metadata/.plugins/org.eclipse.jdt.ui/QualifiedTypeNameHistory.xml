@@ -32,7 +32,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="javafx.scene.Cursor"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
-    <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
     <fullyQualifiedTypeName name="apllication.view.RepoTapLayoutController"/>
     <fullyQualifiedTypeName name="apllication.view.RootLayoutController"/>
     <fullyQualifiedTypeName name="javafx.scene.control.TableView"/>
@@ -50,4 +49,6 @@
     <fullyQualifiedTypeName name="application.MainApp"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="application.view.RepoLayoutController"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.ScrollPane"/>
 </qualifiedTypeNameHistroy>

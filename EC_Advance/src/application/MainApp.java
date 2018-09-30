@@ -56,6 +56,8 @@ public class MainApp extends Application {
 		
 		repoData.add(new Repo("test1"));
 		repoData.get(0).getSourceData().add(new Source("test11"));
+		repoData.get(0).getSourceData().add(new Source("test12"));
+		repoData.get(0).getSourceData().add(new Source("test13"));
 		repoData.get(0).getSourceData().get(0).getVersionData().add(new Version("Ini"));
 		
 		repoData.add(new Repo("test2"));
@@ -81,7 +83,6 @@ public class MainApp extends Application {
 	            repoLayoutController.setRepoName(repoData.get(i).getRepoName());
 	            repoLayoutController.setsourceNum(repoData.get(i).getSourceNum());
 	            repoLayoutController.setMainApp(this);
-	            //repoTapLayoutController.addRepoLayout(repoLayout);
 	            repoList.getChildren().add(repoLayout);
 	            
 	        } catch (IOException e) {
@@ -103,6 +104,7 @@ public class MainApp extends Application {
 		            sourceLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 		            sourceLayoutController.setSourceName(repoData.get(i).getSourceData().get(j).getName());
 		            sourceLayoutController.setMainApp(this);
+		            repoLayoutControllerData.get(i).getSourceList().getChildren().add(soucrLayout);
 		            
 		           
 		        } catch (IOException e) {
@@ -214,6 +216,8 @@ public class MainApp extends Application {
 	@FXML public VBox getFriendTapLayout() { return friendTapLayout; }
 	
 	@FXML public VBox getOthersTapLayout() { return othersTapLayout; }
+	
+	public RepoTapLayoutController getRepoTapLayoutController() { return repoTapLayoutController; };
 	
 	/**
 	 * 저장소에 대한 observable 리스트를 반환한다.

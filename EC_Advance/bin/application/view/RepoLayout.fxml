@@ -45,7 +45,7 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <Button fx:id="goSource" mnemonicParsing="false" prefHeight="48.0" prefWidth="290.0" styleClass="transparent">
+            <Button fx:id="goSource" mnemonicParsing="false" onAction="#showSourceList" prefHeight="48.0" prefWidth="290.0" styleClass="transparent">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

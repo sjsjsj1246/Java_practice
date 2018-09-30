@@ -30,6 +30,9 @@
                <StackPane.margin>
                   <Insets bottom="5.0" left="5.0" top="5.0" />
                </StackPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
          </children>
       </StackPane>
@@ -38,7 +41,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
          <HBox.margin>
-            <Insets left="15.0" />
+            <Insets left="60.0" />
          </HBox.margin></Button>
    </children>
 </HBox>
