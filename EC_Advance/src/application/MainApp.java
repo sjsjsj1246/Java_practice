@@ -17,6 +17,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -29,6 +30,7 @@ public class MainApp extends Application {
 	@FXML private VBox repoTapLayout;
 	@FXML private VBox friendTapLayout;
 	@FXML private VBox othersTapLayout;
+	@FXML private VBox repoList;
 	
 	private RepoTapLayoutController repoTapLayoutController;
 	
@@ -44,6 +46,12 @@ public class MainApp extends Application {
 		 * 테스트 데이터를 추가한다
 		 * TODO DB와 연동할 것
 		 */
+		repoList = new VBox();
+		repoList.setPadding(new Insets(20,0,20,0));
+		repoList.setSpacing(20);
+		repoList.setPrefWidth(300);
+		repoList.setPrefHeight(520);
+		
 		repoLayoutControllerData = new ArrayList<RepoLayoutController> ();
 		
 		repoData.add(new Repo("test1"));
@@ -69,10 +77,12 @@ public class MainApp extends Application {
 	            repoLayoutController.setRepoIndex(i);
 	            repoLayoutControllerData.add(repoLayoutController);
 	            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
-	            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
+	            repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 	            repoLayoutController.setRepoName(repoData.get(i).getRepoName());
 	            repoLayoutController.setsourceNum(repoData.get(i).getSourceNum());
-	            repoTapLayoutController.addRepoLayout(repoLayout);
+	            repoLayoutController.setMainApp(this);
+	            //repoTapLayoutController.addRepoLayout(repoLayout);
+	            repoList.getChildren().add(repoLayout);
 	            
 	        } catch (IOException e) {
 	            e.printStackTrace();
@@ -90,7 +100,7 @@ public class MainApp extends Application {
 		            sourceLayoutController.setSourceIndex(j);
 		            repoLayoutControllerData.get(i).getsourceLayoutControllerData().add(sourceLayoutController);
 		            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
-		            //repoLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
+		            sourceLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
 		            sourceLayoutController.setSourceName(repoData.get(i).getSourceData().get(j).getName());
 		            sourceLayoutController.setMainApp(this);
 		            
@@ -111,6 +121,7 @@ public class MainApp extends Application {
 		this.primaryStage.setResizable(false);
 		initLayout();
 		setDataToLayout(repoData);
+		repoTapLayoutController.setNodeList(repoList);
 		showRepoTapLayout();
 		
 	}

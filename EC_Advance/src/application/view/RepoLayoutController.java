@@ -6,6 +6,7 @@ import application.MainApp;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
@@ -28,6 +29,11 @@ public class RepoLayoutController {
 	 * »ý¼ºÀÚ
 	 */
 	public RepoLayoutController() {
+		sourceList = new VBox();
+		sourceList.setPadding(new Insets(20,0,20,0));
+		sourceList.setSpacing(20);
+		sourceList.setPrefWidth(300);
+		sourceList.setPrefHeight(520);
 	}
 	
 	/**
@@ -53,7 +59,7 @@ public class RepoLayoutController {
 	}
 
 	public void setModifiedDay(LocalDate modifiedDay) {
-		//this.modifiedDay.setText(modifiedDay.toString());
+		this.modifiedDay.setText(modifiedDay.toString());
 	}
 	
 	public void setRepoName(String repoName) {
