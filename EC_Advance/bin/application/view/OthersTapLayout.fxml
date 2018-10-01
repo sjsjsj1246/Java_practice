@@ -33,7 +33,7 @@
             </VBox>
          </children>
       </HBox>
-      <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" opacity="0.41" prefHeight="55.0" prefWidth="350.0" scaleShape="false" text="Button">
+      <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" scaleShape="false" styleClass="transparent" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
