@@ -12,11 +12,11 @@
    <children>
       <AnchorPane prefHeight="337.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
          <children>
-            <TableView layoutX="-6.0" prefHeight="360.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+            <TableView fx:id="versionTable" layoutX="-6.0" prefHeight="360.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
               <columns>
-                <TableColumn prefWidth="294.0" text="버전명" />
-                <TableColumn prefWidth="97.0" text="작성자" />
-                  <TableColumn prefWidth="96.0" text="수정일자" />
+                <TableColumn fx:id="versionNameColumn" prefWidth="294.0" text="버전명" />
+                <TableColumn fx:id="authorColumn" prefWidth="97.0" text="작성자" />
+                  <TableColumn fx:id="modifiedDayColumn" prefWidth="96.0" text="수정일자" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -29,10 +29,10 @@
       </AnchorPane>
       <ButtonBar buttonOrder="U+L_HE+FBIX_NCYOA_R" prefHeight="40.0" prefWidth="500.0">
         <buttons>
-          <Button mnemonicParsing="false" text="다운로드" />
-            <Button mnemonicParsing="false" text="수정" />
-            <Button mnemonicParsing="false" text="삭제" />
-            <Button mnemonicParsing="false" text="추가" />
+          <Button fx:id="download" mnemonicParsing="false" text="다운로드" />
+            <Button fx:id="modifiy" mnemonicParsing="false" text="수정" />
+            <Button fx:id="delete" mnemonicParsing="false" text="삭제" />
+            <Button fx:id="add" mnemonicParsing="false" text="추가" />
         </buttons>
       </ButtonBar>
    </children>

@@ -1,6 +1,7 @@
 package application.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ObjectProperty;
@@ -8,8 +9,6 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 /**
  * 소스 모델 클래스
@@ -18,11 +17,11 @@ import javafx.collections.ObservableList;
  */
 public class Source {
 
-    private final StringProperty name;
+    private final StringProperty sourceName;
     private final IntegerProperty verNum;
     private final ObjectProperty<LocalDate> modifiedDay;
     //소스 내부의 버전 리스트
-  	private ObservableList<Version> versionData = FXCollections.observableArrayList();
+  	private ArrayList<Version> versionData;
   	
     /**
      * 디폴트 생성자
@@ -36,8 +35,9 @@ public class Source {
      *
      * @param name
      */
-    public Source(String name) {
-        this.name = new SimpleStringProperty(name);
+    public Source(String sourceName) {
+    	versionData = new ArrayList<Version> ();
+        this.sourceName = new SimpleStringProperty(sourceName);
 
         // 테스트를 위해 초기화하는 더미 데이터
         this.verNum = new SimpleIntegerProperty(0);
@@ -47,16 +47,16 @@ public class Source {
         //versionData.add(new Version("test"));
     }
 
-    public String getName() {
-        return name.get();
+    public String getSourceName() {
+        return sourceName.get();
     }
 
-    public void setName(String name) {
-        this.name.set(name);
+    public void setSourceName(String sourceName) {
+        this.sourceName.set(sourceName);
     }
 
-    public StringProperty nameProperty() {
-        return name;
+    public StringProperty sourceNameProperty() {
+        return sourceName;
     }
     
     public int getVerNum() {
@@ -82,7 +82,7 @@ public class Source {
     public ObjectProperty<LocalDate> modifiedDayProperty() {
         return modifiedDay;
     }
-    public ObservableList<Version> getVersionData() {
+    public ArrayList<Version> getVersionData() {
     	return versionData;
     }
 }

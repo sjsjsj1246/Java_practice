@@ -1,13 +1,14 @@
 package application.view;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import application.MainApp;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;;
 
 public class SourceLayoutController {
 
@@ -16,7 +17,7 @@ public class SourceLayoutController {
 	@FXML private Button others;
 	@FXML private Button goVersion;
 	
-	private ObservableList<VersionLayoutController> versionLayoutControllerData = FXCollections.observableArrayList();
+	private ArrayList<VersionLayoutController> versionLayoutControllerData;
 	
 	private MainApp mainApp;
 	private int sourceIndex;
@@ -25,7 +26,7 @@ public class SourceLayoutController {
 	 * »ý¼ºÀÚ
 	 */
 	public SourceLayoutController() {
-
+		versionLayoutControllerData = new ArrayList<VersionLayoutController> ();
 	}
 	
 	/**
@@ -58,7 +59,7 @@ public class SourceLayoutController {
 		
 	}
 	
-	public ObservableList<VersionLayoutController> getversionLayoutControllerData() {
+	public ArrayList<VersionLayoutController> getversionLayoutControllerData() {
 		return versionLayoutControllerData;
 	}
 }

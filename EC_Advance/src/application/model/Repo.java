@@ -1,15 +1,15 @@
 package application.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
+import application.view.RepoLayoutController;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 /**
  * 저장소 모델 클래스
@@ -22,7 +22,7 @@ public class Repo {
     private final IntegerProperty sourceNum;
     private final ObjectProperty<LocalDate> modifiedDay;
     //저장소 내부의 소스 리스트
-  	private ObservableList<Source> sourceData = FXCollections.observableArrayList();
+  	private ArrayList<Source> sourceData;
 
     /**
      * 디폴트 생성자
@@ -37,6 +37,7 @@ public class Repo {
      * @param name
      */
     public Repo(String repoName) {
+    	sourceData = new ArrayList<Source> ();
         this.repoName = new SimpleStringProperty(repoName);
 
         // 테스트를 위해 초기화하는 더미 데이터
@@ -75,15 +76,15 @@ public class Repo {
         return modifiedDay.get();
     }
 
-    public void setmodifiedDay(LocalDate birthday) {
-        this.modifiedDay.set(birthday);
+    public void setmodifiedDay(LocalDate modifiedDay) {
+        this.modifiedDay.set(modifiedDay);
     }
 
     public ObjectProperty<LocalDate> modifiedDayProperty() {
         return modifiedDay;
     }
     
-    public ObservableList<Source> getSourceData() {
+    public ArrayList<Source> getSourceData() {
     	return sourceData;
     }
 }

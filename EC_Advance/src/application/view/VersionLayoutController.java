@@ -41,7 +41,7 @@ public class VersionLayoutController {
 	@FXML
 	private void initialize() {
 		// 연락처 테이블 초기화
-		versionNameColumn.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
+		versionNameColumn.setCellValueFactory(cellData -> cellData.getValue().versionNameProperty());
 		authorColumn.setCellValueFactory(cellData -> cellData.getValue().authorProperty());
 		modifiedDayColumn.setCellValueFactory(cellData -> cellData.getValue().modifiedDayProperty());
 	}

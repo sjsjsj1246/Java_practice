@@ -3,13 +3,11 @@ package application.view;
 import application.MainApp;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 
 public class RepoTapLayoutController {
 
 	@FXML private Button addRepo;
-	@FXML private VBox nodeList;
 	@FXML private VBox nodeParent;
 	private MainApp mainApp;
 	
@@ -32,13 +30,6 @@ public class RepoTapLayoutController {
      */
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
-    }
-    
-    /**
-     * 
-     */
-    public void addRepoLayout(VBox repoLayout) {
-    	nodeList.getChildren().add(repoLayout);
     }
     
     public void setNodeList(VBox repoLayout) {

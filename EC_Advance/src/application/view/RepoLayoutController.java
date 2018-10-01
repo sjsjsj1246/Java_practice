@@ -1,9 +1,9 @@
 package application.view;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import application.MainApp;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -20,7 +20,7 @@ public class RepoLayoutController {
 	@FXML private Button goSource;
 	@FXML private VBox sourceList;
 	
-	private ObservableList<SourceLayoutController> sourceLayoutControllerData = FXCollections.observableArrayList();
+	private ArrayList<SourceLayoutController> sourceLayoutControllerData;
 	
 	private MainApp mainApp;
 	private int repoIndex;
@@ -29,6 +29,7 @@ public class RepoLayoutController {
 	 * »ý¼ºÀÚ
 	 */
 	public RepoLayoutController() {
+		sourceLayoutControllerData = new ArrayList<SourceLayoutController> ();
 		sourceList = new VBox();
 		sourceList.setPadding(new Insets(20,0,20,0));
 		sourceList.setSpacing(20);
@@ -72,7 +73,7 @@ public class RepoLayoutController {
 	
 	}
 	
-	public ObservableList<SourceLayoutController> getsourceLayoutControllerData() {
+	public ArrayList<SourceLayoutController> getsourceLayoutControllerData() {
 		return sourceLayoutControllerData;
 	}
 	

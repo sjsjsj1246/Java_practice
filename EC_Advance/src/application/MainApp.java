@@ -102,7 +102,7 @@ public class MainApp extends Application {
 		            repoLayoutControllerData.get(i).getsourceLayoutControllerData().add(sourceLayoutController);
 		            //TODO repo 데이터와 실시간 연동하도록 프로그래밍 할 것
 		            sourceLayoutController.setModifiedDay(repoData.get(i).getmodifiedDay());
-		            sourceLayoutController.setSourceName(repoData.get(i).getSourceData().get(j).getName());
+		            sourceLayoutController.setSourceName(repoData.get(i).getSourceData().get(j).getSourceName());
 		            sourceLayoutController.setMainApp(this);
 		            repoLayoutControllerData.get(i).getSourceList().getChildren().add(soucrLayout);
 		            

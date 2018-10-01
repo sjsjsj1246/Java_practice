@@ -18,7 +18,7 @@ import javafx.collections.ObservableList;
  */
 public class Version {
 
-    private final StringProperty Name;
+    private final StringProperty versionName;
     private final StringProperty author;
     private final ObjectProperty<LocalDate> modifiedDay;
     
@@ -35,24 +35,24 @@ public class Version {
      *
      * @param Name
      */
-    public Version(String Name) {
-        this.Name = new SimpleStringProperty(Name);
+    public Version(String versionName) {
+        this.versionName = new SimpleStringProperty(versionName);
 
         // 테스트를 위해 초기화하는 더미 데이터
         this.author = new SimpleStringProperty("홍길동");
         this.modifiedDay = new SimpleObjectProperty<LocalDate>(LocalDate.of(2018, 8, 20));
     }
 
-    public String getName() {
-        return Name.get();
+    public String getVersionName() {
+        return versionName.get();
     }
 
-    public void setName(String Name) {
-        this.Name.set(Name);
+    public void setVersionName(String versionName) {
+        this.versionName.set(versionName);
     }
 
-    public StringProperty nameProperty() {
-        return Name;
+    public StringProperty versionNameProperty() {
+        return versionName;
     }
     
     public String getAuthor() {
